@@ -1,10 +1,9 @@
 .App{
   position: relative;
-  min-height: calc(100vh - 100px);
-
+  min-height: 100vh;
 }
 #header{
-  position: fixed;
+  position: sticky;
   height: 100px;
   width: 100%;
   top: 0;
