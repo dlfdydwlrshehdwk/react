@@ -11,6 +11,9 @@
   background-color: antiquewhite;
 }
 
+#container{
+
+}
 
 #footer{
   position: absolute;
@@ -19,4 +22,24 @@
   width: 100%;
   left: 0;
   background-color: #333;
+}
+
+.list{
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  width: 400px;
+  height: 400px;
+  & > div{
+    width: 80%;
+  }
+  & .star{
+    display: flex;
+    & > li {
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      background-color: yellow;
+      width: 30px;
+      height: 30px;
+    }
+  }
 }

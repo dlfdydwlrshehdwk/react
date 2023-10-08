@@ -4,6 +4,7 @@
 import './assets/scss/style.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import List from './components/component/List';
 // import React from 'react';
 import { useState } from 'react';
 
@@ -19,18 +20,8 @@ function App() {
     <div className="App">
       <Header />
       <div className='container'>
-        <ul>
-          <li>
-            <div>{ item[0] }</div>
-            <div onClick={()=>{
-              let copy
-              copy = good;
-              copy[0] = copy[0] + 1;
-              setGood(copy)
-            }}>좋아요{good[0]}</div>
-          </li>
-          
-        </ul>
+        <List />
+        <List />
       </div>
       <Footer />
     </div>
