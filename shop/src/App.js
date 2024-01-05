@@ -5,6 +5,7 @@ import './assets/scss/style.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import List from './components/component/List';
+import Practice from './components/component/Practice';
 // import React from 'react';
 import { useState } from 'react';
 
@@ -40,7 +41,8 @@ function App() {
           {
             list.map((x,i)=>{
               return (
-                <List item={x} key={i}/>
+                // <List item={x} key={i}/>
+                <Practice />
               )
             })
           }
